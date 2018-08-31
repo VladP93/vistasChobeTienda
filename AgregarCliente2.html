@@ -1,0 +1,167 @@
+<!DOCTYPE html >
+<html lang="es-SV">
+    <head>
+        <meta charset="utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="sidebar.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Agregar Clientes</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="sidenav">
+                <a style="color: darkslategray"><b>Menú</b></a>
+                <a href="#">Productos</a>
+                <a href="#">Proveedor</a>
+                <a href="#" style="background:#1538d3;"><b>Cliente</b></a>
+                <a href="#">Facturación</a>
+                <a href="#">Inventario</a>
+                <a href="#">Reporte Factura</a>
+                <a href="#">Usuario</a>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <a href="#" style="color: #660000">Cerrar Sesión</a>
+            </div>
+            
+            <div class="main">
+                <div class="row" style="text-align: center;">
+                    <h3>Agregar Cliente</h3>
+                </div>
+                <hr style="border: 0; 
+                height: 1px; 
+                background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+                background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); " />
+                <div class="row">
+                        <div class="container-fluid">
+                            <form action="#">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <label for="txtNombre">Nombre</label>
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <input type="text" disabled="true" class="form-control" id="txtNombre" placeholder="Nombre">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <label for="txtApellido">Apellido</label>
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <input type="text" disabled="true" class="form-control" id="txtApellido" placeholder="Apellido">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <label for="txtDireccion">Dirección</label>
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <input type="text" disabled="true" class="form-control" id="txtDireccion" placeholder="Direccion">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2"></div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="tblDocs">Documentos</label>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            <table class="table" id="tblDocs">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>Tipo</th>
+                                                                        <td>DUI</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <th>Numero</th>
+                                                                        <td>123456789</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <hr>
+                                                            <table class="table" id="tblDocs">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>Tipo</th>
+                                                                        <td>NIT</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Numero</th>
+                                                                        <td>9876543210</td>
+                                                                        </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <button type="button" class="btn btn-default">Agregar Documento</button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="tblContacto">Contactos</label>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            <table class="table" id="tblContacto">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>Tipo</th>
+                                                                        <td>Teléfono</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Contacto</th>
+                                                                        <td>77777777</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Notas</th>
+                                                                        <td>---</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <button type="button" class="btn btn-default">Agregar Contacto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="row">
+                                                <div class="col-sm-6"></div>
+                                                <div class="col-sm-3">
+                                                    <button type="button" class="btn btn-default">Guardar</button>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                        <button type="button" class="btn btn-danger">Cancelar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </body>
+</html>
